@@ -2,6 +2,10 @@ class Pokemon{
     number;
     name;
     type;
-    tupes = [];
+    types = [];
     photo;
+    height;
+    weight;
+    ability;
+    abilities = [];
 }

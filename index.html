@@ -6,6 +6,7 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 <body>
     <section class="content">
@@ -13,6 +14,24 @@
         <ol id="pokemonList" class="pokemons"></ol>
         <div class="pagination">
             <button id="loadMoreButton">Load more</button>
+        </div>
+
+        <!-- Modal com detalhes do pokemon -->
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+                <div id="modalTopoDetail">
+                    <div class="tituloDetail">
+                        <h2 id="modalName"></h2>
+                        <span id="modalId"></span>
+                    </div>
+                    <ol id="modalTypesDetail"></ol>
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <p>Altura: <span id="modalHieghtDetail"></span></p>
+                <p>Peso: <span id="modalWeightDetail"></span></p>
+                <ol id="modalAbilitiesDetail"></ol>
+                <p id="closeModal" class="close">&times;</p>
+            </div>
         </div>
     </section>
 

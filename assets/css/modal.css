@@ -1,0 +1,120 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#modalTopoDetail {
+    color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+#modalTopoDetail img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+    text-align: center;
+    color: #6c79db;
+}
+
+.close:hover{
+    color: #678fee;
+}
+
+.tituloDetail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    text-transform: capitalize;
+    margin-left: 1rem;
+}
+
+#modalId {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+#modalTypesDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+#modalTypesDetail li {
+    list-style: none;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 1rem;
+    text-align: center;
+}
+
+#modalTypesDetail .type{
+    filter: brightness(1.1);
+}
+
+.modal-content {
+    text-align: left;
+    margin-top: -1rem;
+    z-index: 2;
+    font-size: 0.825rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+#modalAbilitiesDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+#modalAbilitiesDetail li {
+    list-style: none;
+    border: none;
+    padding: 0 0.25rem;
+}
+
+#modalAbilitiesDetail li::after{
+    content: ",";
+}
+
+#modalAbilitiesDetail li:last-of-type::after{
+    content: "";
+}
